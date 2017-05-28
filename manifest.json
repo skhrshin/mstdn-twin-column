@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "mstdn-twin-column",
+  "version": "0.1",
+  "author": "Shintaro Sakahara",
+  "description": "Revises Mastodon UI so that a timeline flows in two columns.",
+  "content_scripts": [{
+    "matches": [
+      "https://mstdn.awa.sfc.keio.ac.jp/*"
+    ],
+    "css": [
+      "stylesheets/modification.css"
+    ],
+    "js": [
+      "scripts/xregexp-all.js",
+      "scripts/tutturizer.js",
+      "scripts/main.js"
+    ],
+    "run_at": "document_start"
+  }]
+}
